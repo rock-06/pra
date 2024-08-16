@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('/BACKGROUND.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 30px;
+        }
+        .login-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: blue;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 70%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+        .login-container .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .login-container .checkbox-label input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .login-container .reset-link {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: red;
+            text-decoration: none;
+        }
+        .login-container .reset-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: blue;
+        }
+        @media (max-width: 768px) {
+            .login-title {
+                font-size: 20px;
+            }
+            .login-container {
+                padding: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .login-title {
+                font-size: 18px;
+            }
+            .login-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/ttu.jpeg" alt="Logo"> <!-- Replace '/ttu.jpeg' with the path to your logo image -->
+        </div>
+        <div class="login-title">STUDENT'S PORTAL</div>
+        <div class="login-container">
+            <form>
+                <input type="text" placeholder="STUDENT INDEX NUMBER" required>
+                <input type="password" placeholder="**********" required>
+                <button type="submit">Login</button>
+                <div class="checkbox-label">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <a href="#" class="reset-link">Forgot password? Reset here</a>
+            </form>
+        </div>
+        <div class="footer">
+            &copy; 2024 All rights reserved for Takoradi Technical University.
+        </div>
+    </div>
+</body>
+</html>
